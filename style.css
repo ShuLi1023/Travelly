@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -30,210 +30,292 @@ h2 {
 
 h3 {
 	font-size: 3rem;
-    font-weight: normal;
+	font-weight: normal;
 }
 h4,
 h5 {
-    font-size: 2.8rem;
+	font-size: 2.8rem;
 }
 a {
-    text-decoration: none;
-    color: white;
+	text-decoration: none;
+	color: white;
 }
 
 button {
-    padding: 2rem 6rem;
-    background: cornflowerblue;
-    color: white;
-    border: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-    transition: background 0.5s ease-in-out;
+	padding: 2rem 6rem;
+	background: rgb(65, 97, 158);
+	color: white;
+	border: none;
+	font-size: 1.8rem;
+	cursor: pointer;
+	transition: background 0.5s ease-in-out;
 }
 
 button:hover {
-    background: rgba(8, 38, 119, 0.467);
+	background: rgba(8, 38, 119, 0.467);
 }
 
 /* Nav section with HERO*/
 
 .main-head {
-    background: black;
-    color: white;
+	background: black;
+	color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
 }
 
 nav {
-    min-height: 10vh;
-    display: flex;
-    margin: auto;
-    width: 90%;
-    align-items: center;
-    padding: 2rem;
-    flex-wrap: wrap;
+	min-height: 10vh;
+	display: flex;
+	margin: auto;
+	width: 90%;
+	align-items: center;
+	padding: 2rem;
+	flex-wrap: wrap;
 }
-
 nav ul {
-    display: flex;
-    flex: 1 1 40rem;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
+	display: flex;
+	flex: 1 1 40rem;
+	justify-content: space-evenly;
+	align-items: center;
+	list-style: none;
 }
 
 #logo {
-    flex: 1 1 40rem;
-    font-family: "Pattaya", sans-serif;
-    font-weight: 400;
+	flex: 1 1 40rem;
+	font-family: 'Pattaya', sans-serif;
+	font-weight: 400;
 }
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("/img/landing-page.jpg");
-    min-height: 90vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+		url('/img/landing-page.jpg');
+	min-height: 90vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
 }
 
 .hero h3 {
-    padding: 5rem;
+	padding: 5rem;
 }
-
 
 /* LOCATIONS SECTION */
 
 #locations {
-    min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("/img/new-york-page.png");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+	min-height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+		url('/img/new-york-page.png');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
 }
 .locations-head {
-    width: 90%;
-    margin: auto;
+	width: 90%;
+	margin: auto;
 }
 
 .locations-head h2 {
-    padding: 1rem 0rem;
-    text-decoration: underline;
-    text-decoration-thickness: 0.5rem;
+	padding: 1rem 0rem;
+	text-decoration: underline;
+	text-decoration-thickness: 0.5rem;
 }
 
 .locations-head h3 {
-    padding: 4rem 0rem;
-    background: linear-gradient(hsl(231, 70%, 17%), #7777);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	padding: 4rem 0rem;
+	background: linear-gradient(hsl(231, 70%, 17%), #7777);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .cloud {
-    position: absolute;
-    top: 0%;
-    right: 0%;
+	position: absolute;
+	top: 0%;
+	right: 0%;
 }
 
 .moving-cloud1 {
-    animation: cloudAnimation 3s infinite alternate ease-in-out;
+	animation: cloudAnimation 3s infinite alternate ease-in-out;
 }
 .moving-cloud2 {
-    animation: cloudAnimation 4s infinite alternate ease-in-out;
-    top: 20%;
-    z-index: -1;
-    opacity: 0.5;
+	animation: cloudAnimation 4s infinite alternate ease-in-out;
+	top: 20%;
+	z-index: -1;
+	opacity: 0.5;
 }
 
 @keyframes cloudAnimation {
-    from {
-        transform: translate(10%, -10%);
-    }
-    to {
-        transform: translate(0%, 0%);
-
-    }
+	from {
+		transform: translate(10%, -10%);
+	}
+	to {
+		transform: translate(0%, 0%);
+	}
 }
 
 /*Benefits */
 
 .benefits-head {
-    background: #343c44;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    align-items: center;
-    min-height: 30vh;
-    text-align: center;
-    justify-content: center;
-    padding: 3rem;
+	background: linear-gradient(hsl(0, 0%, 4%), rgba(67, 67, 68, 0.467));
+	display: flex;
+	flex-direction: column;
+	color: white;
+	align-items: center;
+	min-height: 30vh;
+	text-align: center;
+	justify-content: center;
+	padding: 3rem;
 }
 .benefits-head h3 {
-    padding: 1rem;
+	padding: 1rem;
 }
 
 .cards {
-    width: 90%;
-    display: flex;
-    min-height: 70vh;
-    margin: auto;
-    align-items: center;
-    flex-wrap: wrap;
+	width: 90%;
+	display: flex;
+	min-height: 70vh;
+	margin: auto;
+	align-items: center;
+	flex-wrap: wrap;
 }
 .card {
-    
-    flex: 1 1 25rem;
-    margin: 2rem 5rem;
-    width: 15%;
-    min-height: 40vh;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+	flex: 1 1 25rem;
+	margin: 2rem 5rem;
+	width: 15%;
+	min-height: 40vh;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1),
+		0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 .card img {
-    max-width: 15%;
-    margin: 2rem;
+	max-width: 15%;
+	margin: 2rem;
 }
 
-.card h4, p {
-    padding: 1rem;
-    line-height: 1.8;
+.card h4,
+p {
+	padding: 1rem;
+	line-height: 1.8;
 }
 
 .card-icon {
-    background: #27394e;
+	background: #27394e;
+}
+
+/* Contact Form*/
+
+#contact {
+	min-height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+		url('/img/contact-mountain.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.form-wrapper {
+	background: rgba(77, 79, 85, 0.6);
+	width: 70%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 20px;
+}
+.form-head {
+	padding: 4rem;
+}
+.name-form,
+.email-form {
+	padding: 3rem;
+	flex: 1 1 4rem;
+}
+.name-form label,
+.email-form label {
+	margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+    width: 100%;
+	padding: 2rem;
+	margin-top: 8rem;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.form-wrapper input {
+	padding: 1rem 3rem;
+}
+
+/* Footer*/
+
+footer {
+    background: black;
+    color: white;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex: 1 1 40rem;
+    padding: 3rem;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+.footer-wrapper h5 {
+    flex: 1 1 40rem;
+}
+.footer-wrapper ul {
+    list-style: none;
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-between;
 }
 /* MEDIA */
 @media screen and (max-width: 949px) {
-
-    html {
-        font-size: 45%;
+	html {
+		font-size: 45%;
+	}
+	nav {
+		text-align: center;
+	}
+	#logo {
+		padding: 2rem;
+	}
+	.cloud {
+		height: 50rem;
+		pointer-events: none;
+	}
+	.moving-cloud1 {
+		z-index: -1;
+	}
+	.moving-cloud2 {
+		top: 10%;
+		z-index: -2;
+	}
+	.locations-head h3 {
+		background: linear-gradient(hsl(210, 2%, 16%), #7777);
+		-webkit-text-fill-color: rgb(231, 231, 238);
+	}
+    .form-wrapper {
+        width: 100%;
     }
-    nav {
+    footer {
         text-align: center;
     }
-    #logo {
-        padding: 2rem;
-    }
-    .cloud {
-        height: 50rem;
-        pointer-events: none;
-    }
-    .moving-cloud1 {
-        z-index: -1;
-    }
-    .moving-cloud2 {
-        top: 10%;
-        z-index: -2;
-    }
-    .locations-head h3 {
-        background:linear-gradient(hsl(210, 2%, 16%), #7777);
-        -webkit-text-fill-color: rgb(231, 231, 238);
+    .footer-wrapper h5 {
+        padding-bottom: 3rem;
     }
 }
