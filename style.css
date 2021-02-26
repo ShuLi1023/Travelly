@@ -54,6 +54,10 @@ button {
 button:hover {
 	background: rgba(8, 38, 119, 0.467);
 }
+button:focus {
+    background: rgba(8, 38, 119, 0.467);
+    border: white;
+}
 
 /* Nav section with HERO*/
 
@@ -106,7 +110,6 @@ nav ul {
 .hero h3 {
 	padding: 5rem;
 }
-
 /* LOCATIONS SECTION */
 
 #locations {
@@ -192,6 +195,7 @@ nav ul {
 	flex: 1 1 25rem;
 	margin: 2rem 5rem;
 	width: 15%;
+    height: 60vh;
 	min-height: 40vh;
 	align-items: center;
 	text-align: center;
